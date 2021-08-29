@@ -1,0 +1,28 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+group = 'js.config'
+
+sourceCompatibility = '16'
+targetCompatibility = '16'
+
+dependencies {
+    // javascript
+    implementation 'org.graalvm.js:js:21.2.0'
+    implementation 'org.graalvm.js:js-scriptengine:21.2.0'
+    // testing
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.2'
+}
+
+application {
+    mainClass = 'js.config.App'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
