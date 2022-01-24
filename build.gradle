@@ -8,15 +8,15 @@ repositories {
 
 group = 'js.config'
 
-sourceCompatibility = '16'
-targetCompatibility = '16'
+sourceCompatibility = '17'
+targetCompatibility = '17'
 
 dependencies {
     // javascript
-    implementation 'org.graalvm.js:js:21.2.0'
-    implementation 'org.graalvm.js:js-scriptengine:21.2.0'
+    implementation 'org.graalvm.js:js:22.0.0'
+    implementation 'org.graalvm.js:js-scriptengine:22.0.0'
     // testing
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
 }
 
 application {
